@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 30px 15px;
+  background: #eaf4ff;
+  color: #18324f;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.profile-card {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  border: 1px solid #c9def2;
+  border-radius: 15px;
+}
+.hero, .about { padding: 30px; }
+.hero { background: #d8ebff; }
+.theme-button {
+  float: right;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #2366a8;
+  color: white;
+  cursor: pointer;
+}
+h1, h2, .eyebrow { color: #174c83; }
+h1 { font-size: 36px; }
+h1 span { color: #287ac0; }
+.eyebrow { font-weight: bold; }
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.section-heading img {
+  width: 65px;
+  height: 65px;
+  border: 3px solid #80b9ed;
+  border-radius: 12px;
+}
+.about-list li { margin-bottom: 10px; }
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 30px;
+  background: #f2f8ff;
+}
+.social-links a {
+  padding: 7px 12px;
+  border: 1px solid #9bc5e9;
+  border-radius: 20px;
+  color: #174c83;
+  text-decoration: none;
+}
+body.dark-mode {
+  background: #101b2b;
+  color: #e3edf8;
+}
+.dark-mode .profile-card {
+  background: #1b2b40;
+  border-color: #344c68;
+}
+.dark-mode .hero { background: #203a58; }
+.dark-mode h1, .dark-mode h2, .dark-mode .eyebrow { color: #8fc8ff; }
+.dark-mode .social-links { background: #17263a; }
+.dark-mode .social-links a { color: #c5e2ff; }
