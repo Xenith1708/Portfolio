@@ -3,53 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Manas is a Computer Engineering student at VIT Pune exploring programming, web development and game design.">
   <title>Manas | Portfolio</title>
   <link rel="icon" type="image/x-icon" href="https://github.com/Xenith1708.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="page-shell">
-    <section class="profile-card" aria-labelledby="intro-title">
-      <header class="hero">
-        <button class="theme-button" id="theme-button" type="button" aria-pressed="false">
-          Switch to dark mode
-        </button>
-        <h1 id="intro-title">
-          <span class="greeting">Hola!</span>
-          <span class="name-line">
-            <img src="https://github.com/Xenith1708.png" alt="Cat profile picture">
-            <span>I'm Manas</span>
-          </span>
-        </h1>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header page-shell">
+    <a class="wordmark" href="#home" aria-label="Manas, home">M<span>.</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#connect">Connect</a>
+    </nav>
+    <button class="theme-button" id="theme-button" type="button" aria-pressed="false">
+      Dark mode
+    </button>
+  </header>
+
+  <main id="main-content">
+    <section class="hero page-shell" id="home" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Computer Engineering student · VIT Pune</p>
+        <h1 id="intro-title">Curious by nature.<br><span>Building by</span> <em>design.</em></h1>
         <p class="intro">
-          Also known as <strong>@Xenith1708</strong> on GitHub. I'm an 18-year-old
-          first-year student at <strong>VIT Pune</strong>, studying Computer Engineering.
-          
+          Hey, I'm <strong>Manas</strong> — a first-year student exploring the worlds of
+          programming, web development and game design, one project at a time.
         </p>
-      </header>
-
-      <section class="about" aria-labelledby="about-title">
-        <div class="section-heading">
-          <div>
-            
-            <h2 id="about-title">About me</h2>
-          </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
         </div>
-        <ul class="about-list">
-          <li>I love playing football, watching anime, coding, and learning new things.</li>
-          <li>I've built a <i>tic-tac-toe game</i> in Python.</li>
-          <li>I'm currently exploring programming, web development, app development, and game design.</li>
-          <li>I'm working towards becoming a professional programmer, data analyst, and game designer/developer.</li>
-        </ul>
-      </section>
+        <p class="hero-note">Currently learning, always building.</p>
+      </div>
 
-      <footer class="social-links" aria-label="Find me online">
-        <a href="https://github.com/Xenith1708">GitHub </a>
-        <a href="mailto:manasbagewadi170408@gmail.com">Gmail </a>
-        <a href="https://www.instagram.com/manas.b7/?hl=en">Instagram </a>
-    
-      </footer>
+      <div class="hero-art" aria-label="Portrait of Manas">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img src="https://github.com/Xenith1708.png" alt="Manas">
+        </div>
+        <div class="floating-note note-code"><span aria-hidden="true">⌘</span> Curiosity.exe</div>
+        <div class="floating-note note-student"><span class="note-dot"></span> Learning in progress</div>
+        <span class="art-spark spark-one" aria-hidden="true">✳</span>
+        <span class="art-spark spark-two" aria-hidden="true">✦</span>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
     </section>
+
+    <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
+      <div class="section-intro reveal">
+        <p class="eyebrow">A bit about me</p>
+        <h2 id="about-title">The person behind<br>the <span>projects.</span></h2>
+        <p>I'm building a strong foundation and following whatever sparks my curiosity.</p>
+      </div>
+      <div class="about-grid">
+        <article class="info-card card-focus reveal">
+          <span class="card-index">01 / FOCUS</span>
+          <span class="card-symbol" aria-hidden="true">↗</span>
+          <h3>Things I'm exploring</h3>
+          <p>Programming, web development, app development and game design.</p>
+        </article>
+        <article class="info-card card-interests reveal">
+          <span class="card-index">02 / OFF-SCREEN</span>
+          <span class="card-symbol" aria-hidden="true">✳</span>
+          <h3>What I enjoy</h3>
+          <p>Football, anime and the satisfaction of learning something new.</p>
+        </article>
+        <article class="info-card card-goal reveal">
+          <span class="card-index">03 / THE GOAL</span>
+          <span class="card-symbol" aria-hidden="true">◎</span>
+          <h3>Where I'm headed</h3>
+          <p>Growing into a programmer, data analyst and game developer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="work-section section-wrap" id="work" aria-labelledby="work-title">
+      <div class="work-heading reveal">
+        <div>
+          <p class="eyebrow">A first step</p>
+          <h2 id="work-title">Made with <span>Python.</span></h2>
+        </div>
+        <span class="work-count">01 project</span>
+      </div>
+      <article class="project-card reveal">
+        <div class="project-visual" aria-hidden="true">
+          <div class="game-window">
+            <div class="window-dots"><i></i><i></i><i></i><span>tic-tac-toe.py</span></div>
+            <div class="game-grid"><span>×</span><span></span><span>○</span><span></span><span>×</span><span></span><span>○</span><span></span><span>×</span></div>
+          </div>
+          <span class="visual-caption">A little logic, a lot of fun.</span>
+        </div>
+        <div class="project-copy">
+          <p class="eyebrow">01 — Python project</p>
+          <h3>Tic-tac-toe</h3>
+          <p>A classic game built as one of my first programming projects. Small in scale, big on learning.</p>
+          <a class="button button-light" href="https://github.com/Xenith1708" target="_blank" rel="noopener noreferrer">
+            View on GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="contact-section section-wrap" id="connect">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Say hello</p>
+        <h2>Good things start<br>with a <span>conversation.</span></h2>
+      </div>
+      <div class="contact-links reveal" aria-label="Contact and social links">
+        <a href="mailto:manasbagewadi170408@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/Xenith1708" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://www.instagram.com/manas.b7/?hl=en" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-bottom">
+        <a class="wordmark" href="#home" aria-label="Back to top">M<span>.</span></a>
+        <p>Designed with curiosity. © Manas</p>
+        <a class="back-top" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
   </main>
   <script src="script.js"></script>
 </body>
